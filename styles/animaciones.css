@@ -1,0 +1,51 @@
+h3 , h4{
+    text-align: center;
+}
+
+.containerdiv{
+    background-color: lightgray;
+    height: auto;
+    padding: 0.5em 2em;
+}
+span{
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+span > div{
+    width: 5vw;
+    height: 5vw;
+    border: 2px solid black;
+    margin: 1.5em 0;
+    position: relative;
+}
+hr{
+    border-color: gray;
+}
+
+@keyframes animacion{
+    from {
+        left: 10vw;
+        background-color: blueviolet;
+    }
+    to{
+        left: 70vw;
+        background-color: blue;
+    }
+}
+
+.linear{
+    animation: animacion 3s linear infinite alternate;
+}
+.ease{
+    animation: animacion 3s ease infinite alternate;
+}
+.easein{
+    animation: animacion 3s ease-in infinite alternate;
+}
+.easeout{
+    animation: animacion 3s ease-out infinite alternate;
+}
+.easeinout{
+    animation: animacion 3s ease-in-out infinite alternate;
+}

@@ -1,0 +1,80 @@
+.titulo{
+    text-align: center;
+    padding: 0 1em;
+}
+
+@media (min-width:800px){
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .gridcontainer > div{
+        width: 20vw;
+    }
+}
+
+@media (min-width:601px) and (max-width:799px){
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .gridcontainer > div{
+        width: 40vw;
+    }
+}
+
+@media (max-width:600px){
+    .gridcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .gridcontainer > div{
+        width: 90vw;
+    }
+}
+
+
+.gridcontainer{
+    justify-items: center;
+    background-color: lightgray;
+}
+
+.gridcontainer > div{
+    height: 10vw;
+    margin: 1em;
+    background-color:silver;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    
+}
+
+
+.cajita_solid{
+    border: 5px solid black ;
+}
+.cajita_dotted{
+    border: 5px dotted black ;
+}
+.cajita_dashed{
+    border: 5px dashed black ;
+}
+.cajita_double{
+    border: 5px double black ;
+}
+.cajita_groove{
+    border: 5px groove black ;
+}
+.cajita_ridge{
+    border: 5px ridge black ;
+}
+.cajita_inset{
+    border: 5px inset black ;
+}
+.cajita_outset{
+    border: 5px outset black ;
+}
+
+

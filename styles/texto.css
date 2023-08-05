@@ -1,0 +1,136 @@
+@media (min-width:800px){
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .gridcontainer > div{
+        width: 22vw;
+    }
+    span > div{
+        padding: 2em;
+    }
+    .gridcontainer3{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .gridcontainer3 > div{
+        width: 28vw;
+    }
+    .gridcontainer5{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    
+    }
+    .gridcontainer5 > div{
+        width: 18vw;
+    }
+}
+
+@media (min-width:601px) and (max-width:799px){
+    .gridcontainer, .gridcontainer3, .gridcontainer5{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .gridcontainer > span{
+        width: 40vw;
+    }
+    .gridcontainer3 > span{
+        width: 40vw;
+    }
+    .gridcontainer5 > span{
+        width: 40vw;
+    }
+    span > div{
+        width: 35vw;
+    }
+    span > div{
+        padding: 1em;
+    }
+}
+
+@media (max-width:600px){
+    .gridcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .gridcontainer > span{
+        width: 90vw;
+    }
+    span > div{
+        width: 80vw;
+    }
+    span > div{
+        padding: 1em;
+    }
+}
+
+
+.gridcontainer, .gridcontainer3, .gridcontainer5{
+    display: grid;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+span > div{
+    height: auto;
+    margin: 1em;
+    background-color:silver;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+    
+}
+.izquieda{
+    text-align: left;
+}
+.centro, h4{
+    text-align: center;
+}
+.derecha{
+    text-align: right;
+}
+.justificado{
+    text-align: justify;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.overline{
+    text-decoration: overline;
+}
+.overline-underline{
+    text-decoration: overline underline;
+}
+
+.uppercase{
+    text-transform: uppercase ;
+}
+.lowercase{
+    text-transform: lowercase ;
+}
+.capitalize{
+    text-transform: capitalize ;
+}
+
+.serif {
+    font-family: serif;
+}
+.sans-serif {
+    font-family: sans-serif;
+}
+.monospace {
+    font-family: monospace;
+}
+.cursive {
+    font-family: cursive;
+}
+.fantasy {
+    font-family: fantasy;
+}
